@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { LifecycleExplorer } from '../../components/lifecycle-explorer';
 import { Logo } from '../../components/logo';
 import { Button, Card } from '../../components/ui';
 
@@ -334,6 +335,10 @@ export default function LandingPage() {
                 text="Customers see the private record; public visitors get a safe, intentionally limited tracking view."
               />
             </ol>
+
+            <div className="mt-14">
+              <LifecycleExplorer />
+            </div>
           </div>
         </section>
 
